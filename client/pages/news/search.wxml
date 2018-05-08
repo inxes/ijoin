@@ -1,0 +1,24 @@
+
+    <view class="item" wx:for="{{searchInfo}}" wx:key="key">
+        <view wx:if="{{item.status==='1'}}">
+            <view bindtap="seeDetail" id="{{item.ID}}">
+                <view class='title'>{{item.title}}</view>
+
+                <text>{{item.content}}</text>
+                <view class='pic'>
+                    <image src="" style='width:30%;height:69px;'></image>
+                </view>
+            </view>
+
+            <view class='info'>
+                <view class='desc'>
+                <text>发言人:{{item.nick_name}}</text>
+                <text>评论数:{{item.comment}}</text>
+                <text>发言时间:{{item.time}}</text>
+                </view>
+                <view class='opr' bindtap="likeArticle" data-currentindex="{{index}}" data-hi="{{item.like}}" id="{{item.ID}}"><image src="{{(item.like===1)?'../../images/icon/聚收藏gift.png':'../../images/icon/聚收藏.png'}}" style='width:20px;height:20px;'></image></view>
+            </view>
+            <view class='hr'></view>
+
+        </view>
+    </view>

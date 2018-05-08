@@ -1,0 +1,28 @@
+<!--pages/detail/detail.wxml-->
+<view class="content">
+    <view class='title'>{{article.title}}</view>
+
+    <text>{{article.content}}</text>
+    <view class='pic'>
+        <image src="" style='width:30%;height:69px;'></image>
+    </view>
+    <view wx:for="{{comments}}" wx:key="key" class="comment">
+        <text>{{item.content}}</text>
+    <view class='info'>
+        <view class='desc'>
+        <text>发言人:{{item.nick_name}}</text>
+        <text>发言时间:{{item.insertTime}}</text>
+        </view>
+    </view>
+    </view>
+    <view class='bg'>
+        <view class='search'>
+            <view><image src='/images/icon/评论.png' style='width:14px;height:14px;'></image></view>
+            <view><input type='text' placeholder='评论...' bindinput='getComment' value="{{comment}}"></input></view>
+        </view>
+
+        <view class='btn'>
+            <view><button type="warn" bindtap="commentArticle" size="mini" id="{{item.ID}}">GO</button></view>
+        </view>
+    </view>
+</view>

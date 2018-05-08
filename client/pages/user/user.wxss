@@ -1,0 +1,106 @@
+.window{
+  color:#4995fa;
+}
+.bg{
+  width: 100%;
+  height: 100px;
+  background-color: #D53E37;
+}
+.head{
+  display: flex;
+  flex-direction: row;
+}
+.headIcon{
+  margin: 10px;
+}
+.headIcon image{
+  border-radius: 50%;
+}
+.login{
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  left: 100px;
+  margin-top: 30px;
+}
+.detail{
+  color: #ffffff;
+  font-size: 15px;
+  position: absolute;
+  right: 10px;
+  margin-top: 30px;
+}
+.count{
+  display: flex;
+  flex-direction: row;
+}
+.desc{
+  width: 33%;
+  text-align: center;
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 20px;
+  border-right: 1px solid #cccccc;
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+}
+.nav-item{
+  text-align: center;
+  width: 33%;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.item{
+  display: flex;
+  flex-direction: row;
+}
+
+/* 推荐页面 */
+.item{
+  margin: 10px;
+}
+.title{
+  color: #444444;
+  font-weight: bold;
+  font-size: 18px;
+}
+.pic image{
+  margin-right: 10px;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  color: #999999;
+}
+.desc1{
+  width: 270px;
+}
+.desc text{
+  margin-right: 10px;
+}
+.opr{
+  width: 10px;
+}
+.opr view{
+  width: 17px;
+  height: 12px;
+  border: 1px solid #cccccc;
+  line-height: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+.hr{
+  border: 1px solid #cccccc;
+  opacity: 0.2;
+  margin-top: 10px;
+}
+.btn{
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+}

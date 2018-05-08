@@ -1,0 +1,26 @@
+/* pages/add/add.wxss */
+.title{
+  margin: 10px;
+  text-align: center;
+  border-style: 2px solid #D53E37;
+}
+
+.content{
+    margin: 10px;
+    text-align: center;
+    border-style: 2px solid #D53E37;
+}
+
+.button-group{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.share{
+  color: #D53E37;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 20px;
+}

@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/addCgi/addCgi",
+    "pages/add/add",
+    "pages/news/news",
+    "pages/map/map",
+    "pages/user/user",
+    "pages/detail/detail",
+    "pages/poi/poi",
+    "pages/inputtips/input",
+    "pages/regeo/regeo",
+    "pages/staticmap/staticmap"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#D53C3E",
+    "backgroundColor": "#D53C3E",
+    "navigationBarTitleText": "iJoin",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+  },
+  "tabBar":{
+    "color":"#dddddd",
+    "selectedColor":"#3cc51f",
+    "borderStyle":"black",
+    "backgroundColor":"#ffffff",
+    "list":[{
+      "pagePath": "pages/news/news",
+      "iconPath": "images/010-热度.png",
+      "selectedIconPath": "images/010-热度1.png",
+      "text": ""
+    },{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/029-放大镜.png",
+      "selectedIconPath": "images/029-放大镜1.png",
+      "text": ""
+    },{
+      "pagePath": "pages/add/add",
+      "iconPath": "images/021-加号.png",
+      "selectedIconPath": "images/021-加号1.png"
+    },{
+      "pagePath": "pages/user/user",
+      "iconPath": "images/005-nav-我的.png",
+      "selectedIconPath": "images/005-nav-我的1.png"
+    },{
+      "pagePath": "pages/poi/poi",
+      "iconPath": "images/footprint1.png",
+      "selectedIconPath": "images/footprint.png"
+    }]
+  }
+}

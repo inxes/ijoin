@@ -1,0 +1,31 @@
+<!--pages/news/news.wxml-->
+<view class='content'>
+<view class='bg'>
+    <view class='name'>爱练</view>
+    <view class='search'>
+        <view><image src='/images/icon/search.png' style='width:14px;height:14px;'></image></view>
+        <view><input type='text' placeholder='搜你享要...' bindinput='getSearch'></input></view>
+    </view>
+
+    <view class='btn'>
+        <view><button type="warn" bindtap="searchInfos" size="mini">GO</button></view>
+    </view>
+</view>
+<view class='navbg'>
+<view class='nav'>
+<scroll-view class='scroll-view_H' scroll-x='true' enable-back-to-top="true">
+    <view class='scroll-view_H'>
+        <view><view class="{{flag=='0'?'select':'normal'}}" id='0' bindtap='switchNav'>推荐</view></view>
+        <view><view class="{{flag=='1'?'select':'normal'}}" id='1' bindtap='switchNav'>热点</view></view>
+        <view><view class="{{flag=='2'?'select':'normal'}}" id='2' bindtap='switchNav'>搜索</view></view>
+    </view>
+</scroll-view>
+</view>
+
+</view>
+<swiper current='{{currentTab}}' bindchange="changeTab" style='height:800px'>
+<swiper-item><include src="recommend.wxml"/></swiper-item>
+<swiper-item><include src="fire.wxml"/></swiper-item>
+<swiper-item><include src="search.wxml"/></swiper-item>
+</swiper>
+</view>

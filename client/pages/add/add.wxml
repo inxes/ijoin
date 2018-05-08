@@ -1,0 +1,10 @@
+<!--pages/add/add.wxml-->
+<view>
+<form action="" id="add">
+<view class="share">分享你的爱练：</view>
+<view class="title"><input type='text' placeholder="{{haveDraft == '1'?draft.title:'标题'}}" bindinput='getTitle' value='{{draft.title}}' maxlength="25" confirm-type="done"></input></view>
+<view class="content"><textarea bindinput="getContent" auto-height auto-focus placeholder="{{haveDraft == '1'?draft.content:'内容'}}" value='{{draft.content}}' maxlength='5000'></textarea></view>
+<view class="button-group"><button class='publish' data-status='1' bindtap="{{haveDraft == '1'?'coverDraft':'addArticle'}}">发布</button>
+<button class='publish' data-status='0' bindtap="{{haveDraft == '1'?'coverDraft':'addArticle'}}">存为草稿</button></view>
+</form>
+</view>

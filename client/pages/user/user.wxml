@@ -1,0 +1,73 @@
+<view class='content'>
+<view class='bg'>
+<view class='head'>
+<view class='headIcon'>
+<image src="{{userInfo.avatarUrl}}" style='width:70px;height:70px;'></image>
+</view>
+<view class='login'>
+{{userInfo.nickName}}
+</view>
+<view class='detail'>
+<text></text>
+</view>
+</view>
+ <!-- <view class='count'>
+    <view class='desc'>
+    <view>10</view>
+    <view>关注</view>
+    </view>
+    <view class='desc'>
+    <view>273</view>
+    <view>粉丝</view>
+    </view>
+    <view class='desc' style='border:0px;'>
+    <view>300</view>
+    <view>7天访客</view>
+    </view> 
+</view> -->
+</view>
+
+    <view class='nav'>
+        <view class='nav-item'>
+            <view>
+                <image src="/images/icon/collect.png" style='width:23px;height:23px'></image>
+            </view>
+        <view>收藏</view>
+    </view>
+    <view class='nav-item'>
+        <view>
+            <image src='/images/icon/history.png' style='width:23px;height:23px;'></image>
+        </view>
+        <view>历史</view>
+    </view>
+    <view class='nav-item'>
+        <view>
+            <image src='/images/icon/night.png' style='width:23px;height:23px;'></image>
+        </view>
+        <view>夜间</view>
+    </view>
+</view>
+
+    <view class="item" wx:for="{{myArticle}}" wx:key="key">
+        <view>
+            <view bindtap="seeDetail" id="{{item.ID}}">
+                <view class='title'>{{item.title}}</view>
+
+                <text>{{item.content}}</text>
+                <view class='pic'>
+                    <image src="" style='width:30%;height:69px;'></image>
+                </view>
+            </view>
+
+            <view class='info'>
+                <view class='desc1'>
+                <text>评论数:{{item.comment}}</text>
+                <text>发言时间:{{item.time}}</text>
+                </view>
+                <view class='opr' bindtap="deleteArticle" data-currentindex="{{index}}" data-hi="{{item.like}}" id="{{item.ID}}"><image src="../../images/icon/delete.png" style='width:20px;height:20px;'></image></view>
+            </view>
+            <view class='hr'></view>
+
+        </view>
+    </view>
+</view>
